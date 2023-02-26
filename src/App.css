@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgba(240, 250, 251, 255);
 }
 
 .App-logo {
@@ -14,14 +15,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgba(93, 165, 164, 255);
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
+  background-image: url("/public/images/bg-header-desktop.svg");
+  /* background-color: rgba(1, 138, 129, 0.825); */
+  width: 100%;
+  height: 15vh;
 }
 
 .App-link {
@@ -35,4 +40,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgb(151, 181, 193);
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.new {
+  border-radius: 5ch;
+  background-color: rgba(97, 165, 165, 255);
+  margin: 0 10px;
+  border: none;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+}
+
+.featured {
+  border-radius: 5ch;
+  background-color: black;
+  margin: 0 10px;
+  border: none;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
 }
