@@ -68,10 +68,34 @@
 
 .featured {
   border-radius: 5ch;
-  background-color: black;
+  background-color: rgba(44, 58, 58, 255);
   margin: 0 10px;
   border: none;
   padding: 5px;
   color: white;
   font-weight: bolder;
+}
+
+.company {
+  color: rgba(97, 165, 165, 255);
+  font-weight: bolder;
+}
+
+.position {
+  font-weight: 800;
+}
+
+.role-btn {
+  background-color: rgba(223, 240, 240, 255);
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bolder;
+  color: rgba(97, 165, 165, 255);
+}
+
+.info-span {
+  color: rgba(141, 150, 147, 255);
+  margin: 5px;
+  font-weight: bold;
 }

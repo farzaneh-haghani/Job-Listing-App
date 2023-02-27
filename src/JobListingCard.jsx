@@ -1,5 +1,6 @@
 import data from "./data.json";
 import Button from "./Button";
+import Span from "./Span";
 
 const JobListingCard = () => (
   <>
@@ -10,22 +11,24 @@ const JobListingCard = () => (
             <img src={eachCard.logo} alt="" />
           </div>
           <div className="">
-            <span>{eachCard.company}</span>
+            <Span class="company" text={eachCard.company} />
             {eachCard.new && <Button class="new" text="NEW!" />}
             {eachCard.featured && <Button class="featured" text="FEATURED" />}
-            <p>{eachCard.position}</p>
+            <p className="position">{eachCard.position}</p>
             <p>
-              <span>{eachCard.postedAt}</span>
-              <span>{eachCard.contract}</span>
-              <span>{eachCard.location}</span>
+              <Span class="info-span" text={eachCard.postedAt} />
+              <Span class="info-span" text="." />
+              <Span class="info-span" text={eachCard.contract} />
+              <Span class="info-span" text="." />
+              <Span class="info-span" text={eachCard.location} />
             </p>
           </div>
         </div>
         <div>
-          <Button class="" text={eachCard.role} />
-          <Button text="eachCard.level" />
+          <Button class="role-btn" text={eachCard.role} />
+          <Button class="role-btn" text={eachCard.level} />
           {eachCard.languages.map((eachLan) => (
-            <Button text={eachLan} />
+            <Button class="role-btn" text={eachLan} />
           ))}
         </div>
       </div>
